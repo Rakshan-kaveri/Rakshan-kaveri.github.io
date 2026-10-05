@@ -32,6 +32,6 @@ https://Rakshan-kaveri.github.io/
 ## Replace the profile photo
 Place the real profile image at:
 
-`assets/profile.jpg`
+`assets/profile.jpeg`
 
 The page includes a graceful placeholder if the image is missing.
