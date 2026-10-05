@@ -18,7 +18,9 @@ const renderSkills = () => {
               .map(
                 (skill) => `
                   <div class="skill-item">
-                    <div class="skill-logo" aria-label="${skill.name}">${skill.short}</div>
+                    <div class="skill-logo">
+                      ${skill.logo ? `<img src="${skill.logo}" alt="" loading="lazy">` : `<span>${skill.short}</span>`}
+                    </div>
                     <span class="skill-name">${skill.name}</span>
                   </div>
                 `
