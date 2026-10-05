@@ -363,32 +363,55 @@ p {
 }
 
 .info-card h3 {
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
 }
 
-.info-card ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  gap: 0.85rem;
+.section-kicker {
+  margin-bottom: 0.65rem;
+}
+
+.focus-card {
+  padding: 1.35rem 1.2rem;
+}
+
+.focus-intro {
+  margin-bottom: 1.1rem;
   color: var(--muted-strong);
+  font-size: 0.96rem;
 }
 
-.info-card li {
-  position: relative;
-  padding-left: 1rem;
+.focus-grid {
+  display: grid;
+  gap: 0.7rem;
 }
 
-.info-card li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.62rem;
-  width: 0.4rem;
-  height: 0.4rem;
-  border-radius: 50%;
-  background: var(--accent);
+.focus-item {
+  padding: 0.8rem 0.75rem 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 0.9rem;
+  background: rgba(255, 255, 255, 0.015);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.focus-item:hover,
+.focus-item:focus-within {
+  border-color: rgba(255, 255, 255, 0.17);
+  transform: translateY(-1px);
+}
+
+.focus-index {
+  display: inline-block;
+  margin-bottom: 0.45rem;
+  color: var(--muted-strong);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.focus-item p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--muted);
 }
 
 .edu-card {
