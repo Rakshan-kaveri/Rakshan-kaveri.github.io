@@ -555,15 +555,17 @@ p {
   color: var(--muted-strong);
   font-size: 1rem;
   line-height: 1.2;
-  transition: transform 0.2s ease, color 0.2s ease;
+  transition: transform 0.2s ease, color 0.2s ease, opacity 0.2s ease;
 }
 
 .contact-link svg,
 .footer__links svg {
   width: 1.15rem;
   height: 1.15rem;
+  min-width: 1.15rem;
   fill: currentColor;
-  transition: fill 0.2s ease, transform 0.2s ease;
+  opacity: 0.9;
+  transition: fill 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
 }
 
 .contact-link:hover,
@@ -571,7 +573,7 @@ p {
 .footer__links a:hover,
 .footer__links a:focus-visible {
   color: var(--text);
-  transform: translateX(2px);
+  transform: translateX(1px);
 }
 
 .contact-link:hover svg,
@@ -579,6 +581,7 @@ p {
 .footer__links a:hover svg,
 .footer__links a:focus-visible svg {
   fill: var(--text);
+  opacity: 1;
 }
 
 .site-footer {
@@ -613,7 +616,12 @@ p {
   align-items: center;
   justify-content: center;
   color: var(--muted);
-  transition: transform 0.2s ease, color 0.2s ease;
+  transition: transform 0.2s ease, color 0.2s ease, opacity 0.2s ease;
+}
+
+.footer__links a:hover,
+.footer__links a:focus-visible {
+  opacity: 1;
 }
 
 .footer__copy {
