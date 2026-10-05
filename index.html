@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Rakshan Kumar is a 3rd-year B.Tech Information Technology student at MIT Manipal, focused on software development, systems, and practical problem solving."
+    />
+    <meta name="theme-color" content="#0b0b0b" />
+    <meta property="og:title" content="Rakshan Kumar — Information Technology Student" />
+    <meta
+      property="og:description"
+      content="Student portfolio and profile for Rakshan Kumar, focused on software development, systems, and learning by building."
+    />
+    <meta property="og:type" content="website" />
+    <title>Rakshan Kumar — Information Technology Student</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="loader" aria-live="polite" aria-label="Loading Rakshan Kumar portfolio">
+      <div class="loader__mark">RK</div>
+    </div>
+
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="#home" aria-label="Rakshan Kumar home">RK</a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero section">
+        <div class="container hero__grid">
+          <div class="hero__content reveal">
+            <p class="eyebrow">INFORMATION TECHNOLOGY • MIT MANIPAL</p>
+            <h1>Hi, I’m Rakshan Kumar.</h1>
+            <p class="lead">
+              An Information Technology student who enjoys building practical software,
+              experimenting with systems, and turning ideas into useful products.
+            </p>
+            <p class="intro">
+              I’m currently a 3rd-year B.Tech Information Technology student at Manipal
+              Institute of Technology, learning by creating, debugging, and exploring how
+              real systems work.
+            </p>
+
+            <div class="hero__actions">
+              <a class="button button--primary" href="#work">View My Work</a>
+              <a class="button button--secondary" href="#contact">Get In Touch</a>
+            </div>
+
+            <div class="hero__meta" aria-label="Quick summary">
+              <span>01 / BUILD</span>
+              <span>02 / EXPLORE</span>
+              <span>03 / LEARN</span>
+            </div>
+          </div>
+
+          <div class="hero__visual reveal">
+            <div class="photo-card" aria-label="Profile image area">
+              <img src="assets/profile.jpg" alt="Portrait of Rakshan Kumar" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder-visible');" />
+              <div class="photo-placeholder" aria-hidden="true">
+                <span>RK</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">ABOUT</p>
+            <h2>About Me</h2>
+          </div>
+
+          <div class="about__grid reveal">
+            <div class="about__text">
+              <p>
+                I’m an Information Technology student interested in software development,
+                systems, and building things that are actually useful. I enjoy working
+                across the stack, understanding how applications are structured, and
+                figuring out how to make them work reliably in the real world.
+              </p>
+              <p>
+                My interests sit at the intersection of development, experimentation, and
+                practical problem solving. I like learning by building, testing ideas in
+                small projects, and exploring infrastructure and self-hosted systems along
+                the way.
+              </p>
+            </div>
+
+            <aside class="info-card" aria-label="Current focus">
+              <h3>Currently</h3>
+              <ul>
+                <li>3rd-year B.Tech Information Technology</li>
+                <li>MIT Manipal</li>
+                <li>Focus: Software Development</li>
+                <li>Systems</li>
+                <li>Machine Learning</li>
+                <li>Web Technologies</li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--tight" id="education">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">EDUCATION</p>
+            <h2>Education</h2>
+          </div>
+
+          <div class="edu-card reveal">
+            <div class="edu-card__year">2024 — 2028</div>
+            <div>
+              <h3>B.Tech — Information Technology</h3>
+              <p>Manipal Institute of Technology</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="work">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">SELECTED WORK</p>
+            <h2>Selected Work</h2>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card reveal">
+              <div class="project-meta">
+                <span>01</span>
+              </div>
+              <h3>Library Management System</h3>
+              <p>
+                A full-stack library management platform with authentication, book
+                management, issue and return workflows, inventory tracking, and responsive
+                dashboards.
+              </p>
+              <div class="tag-list">
+                <span>React.js</span>
+                <span>Node.js</span>
+                <span>Express.js</span>
+                <span>MySQL</span>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-meta">
+                <span>02</span>
+              </div>
+              <h3>LDL-C Prediction using Explainable ML</h3>
+              <p>
+                An explainable machine-learning project focused on LDL-C prediction, with
+                emphasis on interpretable results and model transparency.
+              </p>
+              <div class="tag-list">
+                <span>Python</span>
+                <span>XGBoost</span>
+                <span>PSO</span>
+                <span>XAI</span>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-meta">
+                <span>03</span>
+              </div>
+              <h3>Brain Tumor Detection &amp; Classification</h3>
+              <p>
+                A deep-learning project for multiclass MRI classification, with visual
+                explainability using Grad-CAM and related techniques.
+              </p>
+              <div class="tag-list">
+                <span>Python</span>
+                <span>EfficientNet</span>
+                <span>CNN</span>
+                <span>XAI</span>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-meta">
+                <span>04</span>
+              </div>
+              <h3>Home Server Infrastructure</h3>
+              <p>
+                A self-hosted environment built around containerized services, databases,
+                reverse proxying, media services, and secure remote access.
+              </p>
+              <div class="tag-list">
+                <span>Docker</span>
+                <span>Nginx</span>
+                <span>PostgreSQL</span>
+                <span>Tailscale</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">SKILLS</p>
+            <h2>Skills</h2>
+          </div>
+
+          <div class="skills-grid reveal">
+            <div class="skill-group">
+              <h3>Programming</h3>
+              <div class="tag-list">
+                <span>Python</span>
+                <span>Java</span>
+                <span>C</span>
+                <span>C++</span>
+                <span>JavaScript</span>
+                <span>SQL</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <h3>Web</h3>
+              <div class="tag-list">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>React</span>
+                <span>Node.js</span>
+                <span>Express</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <h3>Tools</h3>
+              <div class="tag-list">
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>Docker</span>
+                <span>Postman</span>
+                <span>Nginx</span>
+                <span>Tailscale</span>
+                <span>Vercel</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <h3>Databases</h3>
+              <div class="tag-list">
+                <span>MySQL</span>
+                <span>PostgreSQL</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <h3>Systems</h3>
+              <div class="tag-list">
+                <span>Linux</span>
+                <span>Windows</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--tight" id="interests">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">BEYOND THE CODE</p>
+            <h2>Beyond the Code</h2>
+          </div>
+
+          <div class="interests reveal">
+            <span>Building side projects</span>
+            <span>Self-hosting</span>
+            <span>Linux &amp; systems</span>
+            <span>Exploring new technologies</span>
+            <span>Web development</span>
+            <span>Learning how things work</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="container contact__wrap reveal">
+          <div>
+            <p class="eyebrow">CONTACT</p>
+            <h2>Let’s Connect</h2>
+            <p class="contact__text">
+              Have an idea, a project, or just want to say hello? Feel free to reach out.
+            </p>
+          </div>
+
+          <div class="contact__links">
+            <a href="mailto:rakshankumar930@gmail.com">rakshankumar930@gmail.com</a>
+            <a href="https://github.com/Rakshan-kaveri" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/rakshan-k-kumar" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer__inner">
+        <div>
+          <p class="footer__name">Rakshan Kumar</p>
+          <p>Information Technology • MIT Manipal</p>
+        </div>
+
+        <div class="footer__links">
+          <a href="https://github.com/Rakshan-kaveri" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/rakshan-k-kumar" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="mailto:rakshankumar930@gmail.com">Email</a>
+        </div>
+
+        <p class="footer__copy">© <span data-year></span> Rakshan Kumar</p>
+      </div>
+    </footer>
+
+    <a href="#home" class="back-to-top" aria-label="Back to top">↑</a>
+
+    <script src="script.js"></script>
+  </body>
+</html>
