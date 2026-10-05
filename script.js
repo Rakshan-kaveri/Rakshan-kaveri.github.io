@@ -3,10 +3,39 @@ const nav = document.querySelector('.site-nav');
 const revealItems = document.querySelectorAll('.reveal');
 const backToTop = document.querySelector('.back-to-top');
 const yearNode = document.querySelector('[data-year]');
+const skillsGrid = document.getElementById('skills-grid');
+
+const renderSkills = () => {
+  if (!skillsGrid || !window.skillGroups) return;
+
+  skillsGrid.innerHTML = window.skillGroups
+    .map(
+      (group) => `
+        <div class="skill-group">
+          <h3>${group.title}</h3>
+          <div class="skill-grid">
+            ${group.skills
+              .map(
+                (skill) => `
+                  <div class="skill-item">
+                    <div class="skill-logo" aria-label="${skill.name}">${skill.short}</div>
+                    <span class="skill-name">${skill.name}</span>
+                  </div>
+                `
+              )
+              .join('')}
+          </div>
+        </div>
+      `
+    )
+    .join('');
+};
 
 if (yearNode) {
   yearNode.textContent = new Date().getFullYear();
 }
+
+renderSkills();
 
 if (navToggle && nav) {
   navToggle.addEventListener('click', () => {

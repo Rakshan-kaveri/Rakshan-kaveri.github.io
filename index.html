@@ -111,37 +111,43 @@
               </p>
             </div>
 
-            <aside class="info-card focus-card" aria-label="What I'm into">
-              <p class="eyebrow section-kicker">CURRENTLY EXPLORING</p>
-              <h3>What I’m Into</h3>
+            <aside class="focus-panel" aria-label="Currently exploring">
+              <p class="eyebrow section-kicker">CURRENTLY</p>
               <p class="focus-intro">
-                These days, I’m spending most of my time building, breaking, and learning how things work.
+                Building things, learning how they work, and experimenting beyond the classroom.
               </p>
 
               <div class="focus-grid">
                 <article class="focus-item">
-                  <span class="focus-index">01 — BUILD</span>
-                  <p>Full-stack applications and practical web projects.</p>
+                  <span class="focus-index">01</span>
+                  <div>
+                    <h3>Building</h3>
+                    <p>Full-stack apps and practical projects.</p>
+                  </div>
                 </article>
 
                 <article class="focus-item">
-                  <span class="focus-index">02 — EXPLORE</span>
-                  <p>Machine learning, explainable AI, and intelligent systems.</p>
+                  <span class="focus-index">02</span>
+                  <div>
+                    <h3>Exploring</h3>
+                    <p>ML, XAI and intelligent systems.</p>
+                  </div>
                 </article>
 
                 <article class="focus-item">
-                  <span class="focus-index">03 — TINKER</span>
-                  <p>Linux, Docker, self-hosting, and infrastructure work.</p>
+                  <span class="focus-index">03</span>
+                  <div>
+                    <h3>Tinkering</h3>
+                    <p>Linux, Docker and self-hosted infrastructure.</p>
+                  </div>
                 </article>
 
                 <article class="focus-item">
-                  <span class="focus-index">04 — LEARN</span>
-                  <p>Systems, networking, and the technology underneath the abstractions.</p>
-                </article>
-
-                <article class="focus-item">
-                  <span class="focus-index">05 — EXPERIMENT</span>
-                  <p>Trying new tools, frameworks, and ideas through side projects.</p>
+                  <span class="focus-index">04</span>
+                  <div>
+                    <h3>Learning</h3>
+                    <p>Systems, networking and development.</p>
+                  </div>
                 </article>
               </div>
             </aside>
@@ -253,59 +259,7 @@
             <h2>Skills</h2>
           </div>
 
-          <div class="skills-grid reveal">
-            <div class="skill-group">
-              <h3>Programming</h3>
-              <div class="tag-list">
-                <span>Python</span>
-                <span>Java</span>
-                <span>C</span>
-                <span>C++</span>
-                <span>JavaScript</span>
-                <span>SQL</span>
-              </div>
-            </div>
-
-            <div class="skill-group">
-              <h3>Web</h3>
-              <div class="tag-list">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>React</span>
-                <span>Node.js</span>
-                <span>Express</span>
-              </div>
-            </div>
-
-            <div class="skill-group">
-              <h3>Tools</h3>
-              <div class="tag-list">
-                <span>Git</span>
-                <span>GitHub</span>
-                <span>Docker</span>
-                <span>Postman</span>
-                <span>Nginx</span>
-                <span>Tailscale</span>
-                <span>Vercel</span>
-              </div>
-            </div>
-
-            <div class="skill-group">
-              <h3>Databases</h3>
-              <div class="tag-list">
-                <span>MySQL</span>
-                <span>PostgreSQL</span>
-              </div>
-            </div>
-
-            <div class="skill-group">
-              <h3>Systems</h3>
-              <div class="tag-list">
-                <span>Linux</span>
-                <span>Windows</span>
-              </div>
-            </div>
-          </div>
+          <div id="skills-grid" class="skills-grid reveal" aria-live="polite"></div>
         </div>
       </section>
 
@@ -380,6 +334,7 @@
 
     <a href="#home" class="back-to-top" aria-label="Back to top">↑</a>
 
+    <script src="skills-data.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
