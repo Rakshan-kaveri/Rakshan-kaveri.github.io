@@ -887,3 +887,106 @@ p {
     transform: none;
   }
 }
+
+/* Featured projects */
+.featured-list {
+  display: grid;
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.project-card--featured {
+  padding: 1.9rem;
+}
+
+.project-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.project-head h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.25rem;
+}
+
+.project-sub {
+  margin: 0;
+  color: var(--muted-strong);
+  font-size: 0.98rem;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  flex-shrink: 0;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.3rem;
+  padding: 0.4rem 0.95rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--text);
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.project-link:hover,
+.project-link:focus-visible {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.project-link--primary {
+  background: var(--text);
+  color: var(--bg);
+  border-color: var(--text);
+}
+
+.project-card > .project-link {
+  margin-top: 1.2rem;
+}
+
+.project-points {
+  margin: 0 0 1.4rem;
+  padding-left: 1.1rem;
+  color: var(--muted-strong);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.project-points li + li {
+  margin-top: 0.35rem;
+}
+
+.project-card code {
+  font-size: 0.85em;
+  padding: 0.1rem 0.35rem;
+  border-radius: 0.35rem;
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--muted-strong);
+}
+
+.more-heading {
+  margin-top: 3rem;
+}
+
+.skill-logo span {
+  color: #111;
+}
+
+@media (max-width: 640px) {
+  .project-card--featured {
+    padding: 1.4rem;
+  }
+
+  .project-head {
+    flex-direction: column;
+  }
+}

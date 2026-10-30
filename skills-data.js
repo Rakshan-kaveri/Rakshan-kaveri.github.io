@@ -7,6 +7,7 @@ window.skillGroups = [
       { name: 'Java', logo: 'assets/java.jpg' },
       { name: 'Python', logo: 'assets/python.svg' },
       { name: 'JavaScript', logo: 'assets/javascript.svg' },
+      { name: 'TypeScript', logo: 'assets/typescript.svg' },
       { name: 'SQL', short: 'SQL' }
     ]
   },
@@ -16,8 +17,11 @@ window.skillGroups = [
       { name: 'HTML', logo: 'assets/html5.svg' },
       { name: 'CSS', logo: 'assets/css.svg' },
       { name: 'React', logo: 'assets/react.svg' },
+      { name: 'Next.js', logo: 'assets/nextdotjs.svg' },
       { name: 'Node.js', logo: 'assets/nodedotjs.svg' },
-      { name: 'Express', logo: 'assets/express.svg' }
+      { name: 'Express', logo: 'assets/express.svg' },
+      { name: 'Tailwind', logo: 'assets/tailwindcss.svg' },
+      { name: 'WebRTC', logo: 'assets/webrtc.svg' }
     ]
   },
   {
@@ -28,6 +32,8 @@ window.skillGroups = [
       { name: 'Docker', logo: 'assets/docker.svg' },
       { name: 'Postman', logo: 'assets/postman.svg' },
       { name: 'Nginx', logo: 'assets/nginx.svg' },
+      { name: 'Google Cloud', logo: 'assets/googlecloud.svg' },
+      { name: 'Cloudflare', logo: 'assets/cloudflare.svg' },
       { name: 'Tailscale', logo: 'assets/tailscale.svg' },
       { name: 'Vercel', logo: 'assets/vercel.svg' }
     ]
@@ -36,7 +42,8 @@ window.skillGroups = [
     title: 'Databases',
     skills: [
       { name: 'MySQL', logo: 'assets/mysql.svg' },
-      { name: 'PostgreSQL', logo: 'assets/postgresql.svg' }
+      { name: 'PostgreSQL', logo: 'assets/postgresql.svg' },
+      { name: 'Prisma', logo: 'assets/prisma.svg' }
     ]
   },
   {

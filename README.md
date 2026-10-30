@@ -1,6 +1,6 @@
 # Rakshan Kumar — Personal Profile
 
-A clean, responsive personal profile website for Rakshan Kumar, a 3rd-year B.Tech Information Technology student at MIT Manipal.
+Portfolio site for Rakshan Kumar, a 3rd-year B.Tech Information Technology student at MIT Manipal, featuring [Private Share](https://github.com/Rakshan-kaveri/private-share) and [SkyCast](https://github.com/Rakshan-kaveri/weather).
 
 ## Tech
 - HTML
