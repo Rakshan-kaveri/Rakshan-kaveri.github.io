@@ -217,23 +217,27 @@
             <article class="project-card reveal">
               <h3>StreamVault</h3>
               <p>
-                Self-hosted, Netflix-style video streaming platform. Spring Boot API with JWT auth
-                and refresh-token rotation, upload ingestion with async FFmpeg processing and
-                thumbnails, HTTP Range streaming, resumable downloads, comments, watch history
-                and continue-watching.
+                Netflix-style video streaming platform with Google sign-in. Videos live in
+                Cloudflare R2: browsers upload in parts and stream straight from storage through
+                short-lived signed links, so a free-tier VM only runs the API. Playback speed,
+                resume, likes, comments, and an admin dashboard with per-user watch history,
+                watch time and per-video stats.
               </p>
               <div class="tag-list">
                 <span>Java 21</span>
                 <span>Spring Boot</span>
-                <span>Spring Security</span>
                 <span>PostgreSQL</span>
                 <span>React</span>
                 <span>TypeScript</span>
+                <span>Cloudflare R2</span>
+                <span>Google OAuth</span>
                 <span>FFmpeg</span>
                 <span>Docker</span>
-                <span>Nginx</span>
               </div>
-              <a class="project-link" href="https://github.com/Rakshan-kaveri/StreamVault" target="_blank" rel="noopener noreferrer">Source ↗</a>
+              <div class="project-links">
+                <a class="project-link project-link--primary" href="https://stream.rakzu.xyz" target="_blank" rel="noopener noreferrer">Live demo ↗</a>
+                <a class="project-link" href="https://github.com/Rakshan-kaveri/StreamVault" target="_blank" rel="noopener noreferrer">Source ↗</a>
+              </div>
             </article>
 
             <article class="project-card reveal">

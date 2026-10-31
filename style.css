@@ -949,7 +949,8 @@ p {
   border-color: var(--text);
 }
 
-.project-card > .project-link {
+.project-card > .project-link,
+.project-card > .project-links {
   margin-top: 1.2rem;
 }
 
